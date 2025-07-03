@@ -1,46 +1,40 @@
 import React from 'react'
 import { TESTIMONIALS } from '@/lib/constants'
+import { Badge } from '../ui/badge'
+import { Card } from '../ui/card'
+import { Star } from 'lucide-react'
 const Testimonials = () => {
     return (
-        <section id='testimonials' className='py-20 px-6 bg-background'>
+        <section id='testimonials' className='py-24 px-6 bg-white'>
             <div className='max-w-7xl mx-auto'>
-                <div className='text-center mb-16'>
-                    <h2 className='text-3xl md:text-4xl font-bold text-foreground mb-4'>What Our Users Say</h2>
-                    <p className='text-xl text-muted-foreground max-w-2xl mx-auto'>
-                        Trusted by data teams at companies of all sizes to create impactful visualizations.
+                <div className='text-center mb-20'>
+                    <Badge className='bg-brand-accent text-brand-secondary px-6 py-3 rounded-full text-sm font-medium tracking-wide mb-6'>
+                        Testimonials
+                    </Badge>
+                    <h2 className='text-5xl md:text-6xl font-bold text-foreground mb-8 leading-tight tracking-tight'>
+                        What Our Guests Say
+                    </h2>
+                    <p className='text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed'>
+                        Don&apos;t just take our word for it - hear from our valued customers about their dining experience and why they keep coming back
                     </p>
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+                <div className='grid md:grid-cols-3 gap-10'>
                     {TESTIMONIALS.map((testimonial, index) => (
-                        <div key={index} className='bg-secondary p-8 rounded-lg  border border-border'>
-                            {/* Star ratings */}
+                        <Card key={index} className='bg-secondary p-10 shadow-xl border-0 hover:shadow-2xl transition-shadow duration-300 flex flex-col justify-between h-full'>
                             <div className='flex mb-6'>
-                                {[...Array(5)].map((_, i) => (
-                                    <svg
-                                        key={i}
-                                        className='w-5 h-5 text-brand-primary'
-                                        fill='currentColor'
-                                        viewBox='0 0 20 20'
-                                        xmlns='http://www.w3.org/2000/svg'
-                                    >
-                                        <path d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' />
-                                    </svg>
+                                {[1, 2, 3, 4, 5].map((star) => (
+                                    <Star key={star} className='w-6 h-6 fill-brand-accent text-brand-accent' />
                                 ))}
                             </div>
-                            {/* Quote */}
-                            <blockquote className='text-muted-foreground mb-6'>
-                                {testimonial.quote}
-                            </blockquote>
-                            {/* Author */}
-                            <div className='flex items-center'>
-                                <div className='w-10 h-10 bg-muted rounded-full mr-3'></div>
-                                <div>
-                                    <p className='font-semibold text-foreground'>{testimonial.author}</p>
-                                    <p className='text-sm text-muted-foreground'>{testimonial.role}</p>
-                                </div>
+                            <p className='text-foreground mb-8 text-lg leading-relaxed italic'>
+                                &quot;{testimonial.quote}&quot;
+                            </p>
+                            <div>
+                                <div className='font-bold text-foreground text-xl mb-1'>{testimonial.author}</div>
+                                <div className='text-muted-foreground text-sm'>{testimonial.role}</div>
                             </div>
-                        </div>
+                        </Card>
                     ))}
                 </div>
             </div>

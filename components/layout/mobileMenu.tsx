@@ -14,30 +14,29 @@ export function MobileMenu() {
         variant="ghost"
         size="sm"
         onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden"
+        className="md:hidden bg-primary-foreground"
       >
-        {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        {isOpen ? <X className="h-10 w-10" /> : <Menu className="h-5 w-5" />}
       </Button>
 
       {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 bg-background backdrop-blur-sm md:hidden">
-          <div className="fixed right-0 w-full max-w-md bg-background border-l  animate-in slide-in-from-right duration-300">
+        <div className="fixed inset-0 z-50 bg-foreground backdrop-blur-sm md:hidden ">
+          <div className="fixed right-0 w-full max-w-md bg-foreground border-l  animate-in slide-in-from-right duration-300 rounded-xl">
 
             {/* Header */}
              {/* Header */}
-            <div className="flex items-center justify-between border-b border-border bg-muted px-6 py-4">
+            <div className="flex items-center justify-between border-b border-border bg-foreground px-6 py-4">
               <div className="flex items-center space-x-2">
-                <div className="h-6 w-6 rounded bg-gradient-to-br from-brand-primary via-brand-accent to-brand-secondary"></div>
-                <span className="text-lg font-semibold text-foreground">{SITE_TITLE}</span>
+                <span className="text-lg font-semibold text-background">{SITE_TITLE}</span>
               </div>
               <Button
                 variant="ghost"
                 size="icon"
                 onClick={() => setIsOpen(false)}
-                className="rounded-full hover:bg-secondary text-muted-foreground hover:text-foreground"
+                className="rounded-full hover:bg-secondary text-background "
               >
-                <X className="h-4 w-4" />
+                <X className="h-10 w-10" />
               </Button>
             </div>
 

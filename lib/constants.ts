@@ -1,48 +1,75 @@
-import { X, Github, Linkedin, LucideIcon, Target, Eye, Heart } from "lucide-react";
+import { Facebook, Instagram, LucideIcon, Youtube } from "lucide-react";
 
 // Site Metadata
-export const SITE_TITLE = 'HalalElites';
-export const SITE_TAGLINE = 'Boost your productivity with AI-powered tools.';
-export const SITE_URL = 'https://halalelites.dev';
+export const SITE_TITLE = 'TwoSpoons';
+export const SITE_TAGLINE = 'Authentic Halal Restaurant In Ohio';
+export const SITE_URL = 'https://Twospoons.com';
 
 // Navigation Links
 export const NAV_LINKS = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'Testimonials', href: '#testimonials' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', href: '/#' },
+  { label: 'Menu', href: '/menu' },
+  { label: 'Reservation', href: '/reserve' },
+  { label: 'Contact', href: '/contact' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'Blog', href: '/blog' },
+
 ];
 
 // Hero Section
-export const HERO_HEADING = 'Work smarter, not harder.';
-export const HERO_SUBTEXT = 'HalalElites helps you stay organized and get more done with less effort.';
-export const HERO_CTA_TEXT = 'Start Free Trial';
-export const HERO_CTA_LINK = '/signup';
+export const HERO_HEADING = 'Experience Authentic Halal Cuisine.';
+export const HERO_SUBTEXT = 'Savor the flavors of our carefully crafted dishes in  warm welcoming atmopshere.';
+export const HERO_CTA_TEXT = 'Reserve Your Table';
+export const HERO_CTA_LINK = '/reserve';
+
+
+//Best selling section
+export const Best_Selling = 'Our Best Selling Dishes';
+export const Best_Selling_subtext = 'Discover our most popular dishes that keep customers coming back.';
+
+export const BESTSELLING = [
+  {
+    title: "Chicken Biryani",
+    description: "Fragrant basmati rice layered with tender spiced chicken, saffron, and aromatic herbs, slow-cooked to perfection in traditional style",
+    Image: "/chicken-biryani.png"
+  },
+  {
+    title: "Grill Kebab",
+    description: "Fragrant basmati rice layered with tender spiced chicken, saffron, and aromatic herbs, slow-cooked to perfection in traditional style",
+    Image: "/grill-kebab.png"
+  },
+  {
+    title: "Butter Chicken",
+    description: "Fragrant basmati rice layered with tender spiced chicken, saffron, and aromatic herbs, slow-cooked to perfection in traditional style",
+    Image: "/butter-chicken.png"
+  },
+]
+
+
+
 
 // About Section
-export const ABOUT_HEADING = 'How It Started';
-export const ABOUT_SUBTEXT = 'HalalElites is an innovative platform designed to enhance productivity through AI-driven tools and features.';
-export const ABOUT_CONTENT = `
-At HalalElites, we believe that productivity should be effortless. Our platform combines advanced AI technology with intuitive design to help you manage tasks, set priorities, and achieve your goals efficiently.
+export const ABOUT_HEADING = 'A Journey of Authentic Flavors';
+export const ABOUT_SUBTEXT = 'From humble beginnings to becoming Toledo\'s premier halal dining destination, our story is one of passion, tradition, and unwavering commitment to authentic Middle Eastern cuisine';
+export const ABOUT_CONTENT = `Two Spoons was born from a simple dream: to bring the authentic flavors of the Middle East to Toledo, while honoring the rich culinary traditions passed down through generations. Our founder, Chef Ahmad, immigrated from Damascus with nothing but family recipes and an unwavering passion for halal cuisine.
 
-  Whether you're a freelancer, a small business owner, or part of a large team, HalalElites adapts to your workflow and enhances your productivity.
-`;
+Today, we continue to serve dishes that tell stories of heritage, family, and the beautiful diversity of Middle Eastern culture, all while maintaining the highest standards of halal certification.`;
 export const ABOUT = [
   {
-    title: 'Our Mission',
-    description: 'To empower individuals and teams to achieve their best work through innovative technology.',
-    icon: Target,
+    title: '5000+',
+    description: 'Happy Customers',
+
   },
   {
-    title: 'Our Vision',
-    description: 'A world where productivity is seamless and accessible to everyone.',
-    icon: Eye,
+    title: '4.9',
+    description: 'Average Rating',
+
   },
   {
-    title: 'Our Values',
-    description: 'Integrity, innovation, and customer-centricity are at the core of everything we do.',
-    icon: Heart,
+    title: '50+',
+    description: 'Signature Dishes',
+
   },
 ]
 // Contact Section
@@ -50,148 +77,173 @@ export const CONTACT_HEADING = 'Get in Touch';
 export const CONTACT_SUBTEXT = 'We would love to hear from you! Reach out with any questions or feedback.';
 export const CONTACT_EMAIL = 'support@halalelites.com';
 export const CONTACT_PHONE = '+1 (555) 123-4567';
-export const CONTACT_ADDRESS = '123 HalalElites St, Suite 100, City, Country';
+export const CONTACT_ADDRESS = '123 HalalElites St, Suite 100, City';
 
 
 // Testimonials Section
 
 export const TESTIMONIALS = [
   {
-    quote: "halalElites has transformed the way I work. I'm more organized and focused than ever!",
-    author: "Habeeb",
-    role:   "CEO of halalElites"
+    quote: "The best halal food in Toledo! The biryani is absolutely authentic and the service is exceptional. This place feels like home.",
+    author: "Sarah M.",
+    role: "Regular Customer"
   },
   {
-    quote: "The AI suggestions are a game changer. They help me prioritize tasks effectively.",
-    author: "Mr X",
-    role:   "Freelance Designer"
+    quote: "Finally, a restaurant that serves genuine halal cuisine. The mixed grill platter is a must-try! Outstanding quality.",
+    author: "Ahmed K.",
+    role: "Food Blogger"
   },
   {
-    quote: "I love the smart scheduling feature! It takes the stress out of planning my day.",
-    author: "Ibrahim",
-    role:   "Project Manager"
+    quote: "Great place for family dinners. The staff is friendly and the menu has something for everyone. Highly recommended!",
+    author: "Jamal R.",
+    role: "Local Resident"
   }
 ];
 
-// Features Section, use icons when available, prefferably lucide icons
-export const FEATURES = [
-  {
-    icon: '📅',
-    title: 'Smart Scheduling',
-    description: 'Automatically plan your day based on priority and deadlines.',
-  },
-  {
-    icon: '🤖',
-    title: 'AI Assistance',
-    description: 'Get AI-generated suggestions to improve productivity.',
-  },
-  {
-    icon: '🔔',
-    title: 'Reminders & Alerts',
-    description: 'Never miss a task with intelligent reminders and alerts.',
-  },
-];
 
-
-// Services Section
-export const SERVICES_HEADING = 'How We Work';
-export const SERVICES_SUBTEXT = 'We offer a range of services to help you maximize your productivity and achieve your goals.';
-export const SERVICES = [
-  {
-    title: 'Web Development',
-    description: 'Custom web applications tailored to your business needs.',
-    features: [
-      'Responsive design',
-      'Modern frameworks',
-      'SEO optimization'
-    ]
-  },
-  {
-    title: 'AI-Powered Insights',
-    description: 'Leverage AI to gain insights into your productivity patterns and improve efficiency.',
-    features: [
-      'Pattern recognition',
-      'Automated reporting',
-      'Predictive analytics'
-    ]
-  },
-  {
-   
-    title: 'Collaboration Tools',
-    description: 'Work seamlessly with your team using our collaboration features.',
-    features: [
-      'Real-time sync',
-      'Team workspaces',
-      'Communication tools'
-    ]
-  },
-  {
-    title: 'Data Analytics',
-    description: 'Analyze your productivity data to make informed decisions.',
-    features: [
-      'Custom dashboards',
-      'Data visualization',
-      'Performance metrics'
-    ]
-  },
-  {
-    title: 'Service 5',
-    description: 'description 5.',
-    features: [
-      'feature 1',
-      'feature 2',
-      'feature 3'
-    ]
-  },
-  {
-    title: 'Service 6',
-    description: 'description 6',
-    features: [
-      'feature 1',
-      'feature 2',
-      'feature 3'
-    ]
-  }
-  
-];
-
-// Pricing Plans (if applicable)
-export const PRICING_PLANS = [
-  {
-    name: 'Free',
-    price: '$0',
-    features: ['Basic task management', 'Limited AI suggestions', '1 project'],
-  },
-  {
-    name: 'Pro',
-    price: '$12/mo',
-    features: ['Unlimited projects', 'Full AI suite', 'Priority support'],
-  },
-];
 
 // Footer Info
-export const FOOTER_TEXT = '© 2025 HalalElites empowers teams to transform raw data into clear, compelling visuals — making insights easier to share, understand, and act on.';
-export const FOOTER_LINKS = [
-  { label: 'Privacy Policy', href: '/privacy' },
-  { label: 'Terms of Service', href: '/terms' },
-  { label: 'Cookie Settings', href: '/cookie-settings' },
-];
-
+export const FOOTER_TEXT = '© 2025 Two Spoons Restaurant. All Rights Reserved.';
 
 export const SOCIAL_LINKS: { name: string; url: string; icon: LucideIcon }[] = [
   {
-    name: 'X',
+    name: 'Facebook',
     url: 'https://twitter.com/yourprofile',
-    icon: X,
+    icon: Facebook,
   },
   {
-    name: 'GitHub',
+    name: 'Instagram',
     url: 'https://github.com/yourprofile',
-    icon: Github,
+    icon: Instagram,
   },
   {
-    name: 'LinkedIn',
+    name: 'Youtube',
     url: 'https://linkedin.com/in/yourprofile',
-    icon: Linkedin,
+    icon: Youtube,
   },
 ];
+
+
+//MENU PAGE
+
+export const MENU_CATEGORIES = [
+  {
+    category: "Appetizers",
+    items: [
+      {
+        title: "Chicken Samosa",
+        description: "Crispy pastry filled with spiced minced chicken, peas, and potatoes, served with mint chutney.",
+        Image: "/chicken-samosa.png"
+      },
+      {
+        title: "Vegetable Pakora",
+        description: "Assorted fresh vegetables dipped in a spiced chickpea flour batter and deep-fried until golden and crispy.",
+        Image: "/vegetable-pakora.png"
+      },
+      {
+        title: "Paneer Tikka",
+        description: "Cubes of Indian cottage cheese marinated in yogurt and spices, grilled in a tandoor oven until charred and tender.",
+        Image: "/paneer-tikka.png"
+      },
+    ]
+  },
+  {
+    category: "Main Courses",
+    items: [
+      {
+        title: "Chicken Biryani",
+        description: "Fragrant basmati rice layered with tender spiced chicken, saffron, and aromatic herbs, slow-cooked to perfection in traditional style.",
+        Image: "/chicken-biryani.png"
+      },
+      {
+        title: "Grill Kebab Platter",
+        description: "An assortment of succulent grilled kebabs, including chicken tikka, seekh kebab, and lamb chops, served with naan and salad.",
+        Image: "/grill-kebab.png" // Re-using image, but description changed for platter
+      },
+      {
+        title: "Butter Chicken",
+        description: "Tender chicken pieces cooked in a rich, creamy tomato-based sauce, flavored with butter and traditional Indian spices.",
+        Image: "/butter-chicken.png"
+      },
+      {
+        title: "Lamb Rogan Josh",
+        description: "A classic Kashmiri lamb curry, slow-cooked with a blend of aromatic spices, yogurt, and a hint of ginger.",
+        Image: "/lamb-rogan-josh.png"
+      },
+      {
+        title: "Dal Makhani",
+        description: "Slow-cooked black lentils and kidney beans simmered in a creamy, buttery, and mildly spiced tomato gravy.",
+        Image: "/dal-makhani.png"
+      },
+      {
+        title: "Garlic Naan",
+        description: "Soft, leavened flatbread infused with fresh garlic and cilantro, baked in a tandoor oven.",
+        Image: "/garlic-naan.png"
+      },
+    ]
+  },
+  {
+    category: "Desserts",
+    items: [
+      {
+        title: "Gulab Jamun",
+        description: "Deep-fried milk-solids dumplings soaked in a rose-scented sugar syrup, served warm.",
+        Image: "/gulab-jamun.png"
+      },
+      {
+        title: "Kheer (Rice Pudding)",
+        description: "A traditional Indian rice pudding made with slow-cooked basmati rice, milk, sugar, nuts, and cardamom.",
+        Image: "/kheer.png"
+      },
+    ]
+  }
+];
+
+export const  blogPosts = [
+    {
+      title: "Preparing for Ramadan 2024",
+      excerpt:
+        "As we approach the blessed month of Ramadan, our kitchen is bustling with preparations for special iftar and suhoor menus. Learn about our traditional dishes and new additions for this year's celebrations.",
+      date: "February 15, 2024",
+      author: "Chef Ahmad",
+      category: "Recipes",
+      image: "/ramadan.png",
+    },
+    {
+      title: "The Journey of Our Halal Ingredients",
+      excerpt:
+        "Discover how we carefully source our halal ingredients and maintain the highest standards of halal compliance while creating delicious dishes that delight our guests.",
+      date: "February 1, 2024",
+      author: "Sarah Khan",
+      category: "Education",
+      image: "/journey.png",
+    },
+    {
+      title: "Join Our Monthly Cooking Classes",
+      excerpt:
+        "Learn the secrets behind our most popular dishes in our hands-on cooking classes. Next month's theme: Traditional Biryani Masterclass.",
+      date: "January 15, 2024",
+      author: "Chef Ahmad",
+      category: "Education",
+      image: "/cooking-class.png",
+    },
+
+  ]
+
+ export const galleryImages = [
+    { src: "/awards.png", alt: "Awards", category: "Restaurant" },
+    { src: "/butter-chicken.png", alt: "Butter Chicken", category: "Restaurant" },
+    { src: "/grill-kebab.png", alt: "Lamb Kebab", category: "Main Dishes" },
+    { src: "/kitchen.png", alt: "Our Kitchen", category: "Restaurant" },
+    { src: "/catering-setup.png", alt: "Dining Area", category: "Restaurant" },
+    { src: "/eid.png", alt: "Eid At TwoSpoons", category: "Desserts" },
+    { src: "/private-party.png", alt: "Party", category: "Appetizers" },
+    { src: "/kitchen.png", alt: "Professional Kitchen", category: "Restaurant" },
+    { src: "/cooking-class.png", alt: "Cooking Class", category: "Main Dishes" },
+    { src: "/special-dining.png", alt: "Private Dining Room", category: "Restaurant" },
+    { src: "/lamb-rogan-josh.png", alt: "Lamb Rogan Josh", category: "Main Dishes" },
+    { src: "/patio-dining.png", alt: "Outdoor Patio", category: "Restaurant" },
+    { src: "/corporate-setup.png", alt: "Corprorate Setup", category: "Restaurant" },
+    { src: "/wedding-setup.png", alt: "Wedding", category: "Restaurant" },
+    { src: "/restaurant-interior.png", alt: "Main Dining Hall", category: "Restaurant" },
+  ]
