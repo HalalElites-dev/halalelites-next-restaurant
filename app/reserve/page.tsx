@@ -118,8 +118,8 @@ const page = () => {
                 For large parties or special events, please call us directly
               </p>
               <Button
-                variant="outline"
-                className="border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white px-8 py-4 rounded-full text-lg font-medium tracking-wide bg-transparent"
+                variant="default"
+                className="border-brand-primary  bg-brand-primary text-brand-secondary px-8 py-4 rounded-full text-lg font-medium tracking-wide "
               >
                 <Phone className="w-5 h-5 mr-2" />
                 Call (770) 833-9267
