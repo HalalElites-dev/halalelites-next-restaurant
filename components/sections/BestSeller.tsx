@@ -45,8 +45,8 @@ const BestSelling = () => {
 
                 <div className='flex justify-center'>
                     <Button
-                        variant="outline"
-                        className="border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white px-8 py-4 rounded-full text-lg font-medium tracking-wide bg-transparent">
+                        variant="default"
+                        className="bg-brand-primary text-brand-secondary px-8 py-4 rounded-full text-lg font-medium tracking-wide ">
                         <Link href="/menu">View Menu</Link>
                     </Button>
                 </div>
