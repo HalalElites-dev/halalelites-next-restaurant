@@ -47,7 +47,7 @@ const BestSelling = () => {
                     <Button
                         variant="default"
                         className="bg-brand-primary text-brand-secondary px-8 py-4 rounded-full text-lg font-medium tracking-wide ">
-                        <Link href="/menu">View Menu</Link>
+                        <Link href="/menu">View Full Menu</Link>
                     </Button>
                 </div>
             </div>

@@ -56,7 +56,7 @@ const page = () => {
                   <p className="text-[#2B1C08]/70 mb-6 text-lg leading-relaxed">{post.excerpt}</p>
 
                   <Button
-                    variant="outline"
+                    variant="default"
                     className="border-[#FF7F47] text-[#FF7F47] hover:bg-[#FF7F47] hover:text-white px-6 py-3 rounded-full font-medium tracking-wide bg-transparent group-hover:scale-105 transition-transform duration-300"
                   >
                     Read More
