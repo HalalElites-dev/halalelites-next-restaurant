@@ -9,7 +9,7 @@ const page = () => {
         <section id='contact' className='py-30 px-6 bg-background'>
             <div className='max-w-7xl mx-auto'>
                 <div className='text-center mb-20'>
-                    <h1 className='text-3xl md:text-7xl font-extrabold text-brand-primary mb-6 leading-tight tracking-tight'>Contact Us</h1>
+                    <h1 className='py-5 lg:py-0 text-5xl md:text-6xl font-extrabold text-foreground mb-4 leading-tight tracking-tight'>Contact Us</h1>
                     <p className='text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed'>Get in touch with us for reservations, catering, or any questions about our restaurant</p>
                 </div>
 
@@ -20,7 +20,7 @@ const page = () => {
                             <Badge className="bg-brand-accent text-brand-secondary px-6 py-3 rounded-full text-sm font-medium tracking-wide mb-6">
                                 Get In Touch
                             </Badge>
-                            <h1 className='text-xl md:text-5xl font-bold leading-tight text-brand-primary'>Send Us a Message</h1>
+                            <h1 className='text-4xl md:text-5xl font-bold leading-tight text-brand-primary'>Send Us a Message</h1>
                             <p className='text-base text-muted-foreground leading-relaxed'>We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible</p>
                         </div>
 

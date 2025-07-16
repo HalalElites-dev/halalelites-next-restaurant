@@ -6,7 +6,7 @@ const About = () => {
     <section id='about' className="py-24 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-6xl font-bold text-foreground mb-4 eading-tight tracking-tight">{ABOUT_HEADING}</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-4 eading-tight tracking-tight">{ABOUT_HEADING}</h2>
           <p className="text-xl  text-muted-foreground max-w-4xl mx-auto leading-relaxed  ">
             {ABOUT_SUBTEXT}
           </p>

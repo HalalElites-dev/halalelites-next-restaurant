@@ -9,8 +9,8 @@ import Link from 'next/link';
 
 export function Header() {
     return (
-        <header className='top-0 z-50  right-0 left-0 flex fixed justify-center '>
-            <nav className='max-w-7xl mx-6 mt-2 bg-foreground backdrop-blur-md rounded-full px-12 py-4 md:px-6 md:py-2 shadow-2xl flex items-center justify-evenly border border-brand-primary/10 gap-x-12 md:gap-x-10'>
+        <header className='top-0 z-50  right-0 left-0 flex fixed justify-center  '>
+            <nav className='max-w-7xl mx-6 mt-2 bg-foreground backdrop-blur-md rounded-full px-24 py-4 md:px-6 md:py-2 shadow-2xl flex items-center justify-evenly  gap-x-12 md:gap-x-10'>
                 {/* left section: Site title or logo*/}
 
                 <div className='flex items-center space-x-2'>

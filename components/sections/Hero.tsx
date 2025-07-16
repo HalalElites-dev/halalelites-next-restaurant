@@ -25,7 +25,7 @@ const Hero = () => {
                         <Link href={HERO_CTA_LINK}>{HERO_CTA_TEXT}</Link>
 
                     </Button>
-                    <Button variant="outline" className=" px-10 py-4 rounded-full text-lg font-medium tracking-wide">
+                    <Button variant="outline" className=" px-10 py-4 rounded-full text-lg font-medium tracking-wide hover:text-brand-secondary">
                         <Link href="/menu">View Menu</Link>
 
                     </Button>

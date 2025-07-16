@@ -14,7 +14,7 @@ const BestSelling = () => {
                     <Badge className="bg-brand-accent text-background px-6 py-3 rounded-full text-sm font-medium tracking-wide mb-6">
                         Best Sellers
                     </Badge>
-                    <h1 className='text-3xl md:text-6xl font-bold text-foreground mb-4 leading-tight tracking-tight'>{Best_Selling}</h1>
+                    <h1 className='text-5xl md:text-6xl font-bold text-foreground mb-4 leading-tight tracking-tight'>{Best_Selling}</h1>
                     <p className='text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed'>
                         {Best_Selling_subtext}
                     </p>

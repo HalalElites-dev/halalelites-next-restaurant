@@ -7,7 +7,7 @@ const page = () => {
         <section id='gallery' className='py-30 px-6 bg-background'>
             <div className='max-w-7xl mx-auto'>
                 <div className='text-center mb-20'>
-                    <h1 className='text-3xl md:text-7xl font-extrabold text-brand-primary mb-6 leading-tight tracking-tight'>Gallery</h1>
+                    <h1 className='py-5 lg:py-0 text-5xl md:text-6xl font-extrabold text-foreground mb-4 leading-tight tracking-tight'>Gallery</h1>
                     <p className='text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed'>Explore our delicious dishes and warm restaurant atmosphere through our photo gallery</p>
                 </div>
 

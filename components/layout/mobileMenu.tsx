@@ -21,12 +21,11 @@ export function MobileMenu() {
 
       {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 bg-foreground backdrop-blur-sm md:hidden ">
-          <div className="fixed right-0 w-full max-w-md bg-foreground border-l  animate-in slide-in-from-right duration-300 rounded-xl">
+        <div className="fixed inset-0 z-50 bg-foreground backdrop-blur-sm md:hidden max-w-2xl">
+          <div className="fixed right-0 w-full bg-foreground animate-in slide-in-from-right duration-300 rounded-2xl">
 
-            {/* Header */}
              {/* Header */}
-            <div className="flex items-center justify-between border-b border-border bg-foreground px-6 py-4">
+            <div className="flex items-center justify-between  bg-foreground px-6 py-4 rounded-sm">
               <div className="flex items-center space-x-2">
                 <span className="text-lg font-semibold text-background">{SITE_TITLE}</span>
               </div>

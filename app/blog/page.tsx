@@ -10,11 +10,8 @@ const page = () => {
     <section id="blog" className='py-30 px-6 bg-background'>
       <div className='max-w-7xl mx-auto'>
 
-        <div className='text-center mb-20'>
-          <Badge className="bg-[#FF7F47] text-white px-6 py-3 rounded-full text-sm font-medium tracking-wide mb-6">
-              Latest Posts
-            </Badge>
-          <h1 className='text-6xl md:text-7xl font-extrabold text-brand-primary mb-6 leading-tight tracking-tight'>Our Blog</h1>
+        <div className='text-center mb-24'>
+          <h1 className='py-5 lg:py-0 text-5xl md:text-6xl font-extrabold text-foreground mb-4 leading-tight tracking-tight'>Our Blog</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Stories, recipes, and insights from the heart of Middle Eastern cuisine
           </p>

@@ -9,7 +9,7 @@ const page = () => {
             <div className='max-w-7xl mx-auto'>
 
                 <div className='text-center mb-20'>
-                    <h1 className='text-6xl md:text-7xl font-extrabold text-brand-primary mb-6 leading-tight tracking-tight'>Our Story</h1>
+                    <h1 className='py-5 lg:py-0 text-5xl md:text-6xl font-extrabold text-foreground mb-4 leading-tight tracking-tight'>Our Story</h1>
                 </div>
                 <div className="space-y-32">
                     <div className="relative">

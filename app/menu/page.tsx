@@ -8,7 +8,7 @@ const page = () => {
       <div className='max-w-7xl mx-auto'>
         <div className='text-center mb-20'>
           {/* heading */}
-          <h1 className='text-3xl md:text-7xl font-extrabold text-foreground mb-4 leading-tight tracking-tight'>Our Menu</h1>
+          <h1 className='py-5 lg:py-0 text-5xl md:text-6xl font-extrabold text-foreground mb-4 leading-tight tracking-tight'>Our Menu</h1>
           <p className='text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed'>Discover our authentic halal dishes crafted with traditional recipes and the finest ingredients</p>
         </div>
         {/* menu design */}
