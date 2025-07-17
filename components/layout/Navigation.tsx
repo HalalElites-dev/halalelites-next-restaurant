@@ -20,7 +20,7 @@ export function Navigation() {
           key={link.href}
           href={link.href}
           className={cn(
-            "font-heading font-medium transition-colors hover:text-primary-foreground/80 relative py-1 text-primary-foreground",
+            "font-heading uppercase transition-colors hover:text-primary-foreground/80 relative py-1 text-primary-foreground font-bold",
             
           )}
           onClick={(e) => handleClick(e, link.href)}

@@ -25,7 +25,7 @@ export function Header() {
 
 
                 {/* middle section: Desktop Navigation */}
-                <div className="hidden md:flex ">
+                <div className="hidden md:flex">
                     <Navigation />
                 </div>
 
